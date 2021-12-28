@@ -242,6 +242,7 @@ export default class App extends React.Component {
       endDate: this.state.endDate,
       candidatesId: this.state.candidatesId
     }
+    
     console.log(this.state.candidatesId)
     axios.put(`https://api-infojobs.herokuapp.com/api/v1/${this.state.idPutExperience}`, experience)
       .then(res => {
